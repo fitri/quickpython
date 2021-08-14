@@ -1,2 +1,4 @@
-# quickpython
-Quick tips on how to implement certain logic in python
+# one liner conditional 
+```python
+value_1 if condition else value_2
+```

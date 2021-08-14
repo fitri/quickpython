@@ -9,6 +9,7 @@ There's no fixed format for the code, it might been working code or might just b
 ```python
 value_1 if condition else value_2
 ```
+
 ### Run command and capture the output plus add pipeline for another command
 ```python
 1stcommand = ['ls ', '-l']
@@ -20,6 +21,7 @@ output = subprocess.run(2ndcommand, stdin=pat_info.stdout, stdout=subprocess.PIP
 # add parameter shell=True if wildcard not working
 # only Popen stdout process can be pass as stdin
 ```
+
 ### Opening file with generator
 ```python
 def openingfile(patlist):
@@ -31,6 +33,7 @@ def openingfile(patlist):
 for i in openingfile('list.file'):
     print(i)
 ```
+
 ### Getting and update value for dictionary
 ```python
 dict = {}
@@ -42,7 +45,22 @@ dict['name'] = fitri
 dict.get('name')
 ```
 
-  
+### Stripping string
+```python
+text = "   hello   "
+
+#remove left trailing char
+text.lstrip()
+
+#remove right trailing char
+text.rstrip()
+
+#remove all trailing char
+text.strip()
+
+#strip custom char, must be from either end (can be applied in both rstrip and lstrip)
+text.strip('o ')
+```
   
   
   

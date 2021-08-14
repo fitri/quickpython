@@ -1,7 +1,7 @@
 # Real Quick Tips How to Implement Certain Python Feature
 The list is not in order and continue adding the list based on need.
 
-### one liner conditional 
+### One liner conditional 
 ```python
 value_1 if condition else value_2
 ```
@@ -16,3 +16,47 @@ output = subprocess.run(2ndcommand, stdin=pat_info.stdout, stdout=subprocess.PIP
 # add parameter shell=True if wildcard not working
 # only Popen stdout process can be pass as stdin
 ```
+### Opening file with generator
+```python
+def openingfile(patlist):
+		with open(patlist, 'r') as listfile:
+			for pattern in listfile.readlines():
+				yield pattern
+
+# calling the function
+for i in openingfile('list.file'):
+  print(i)
+```
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

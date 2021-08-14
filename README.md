@@ -1,6 +1,7 @@
 # Real Quick Tips How to Implement Certain Python Feature
 The list is not in order and continue adding the list based on need.
-The indention format for this post is 4 spaces.
+
+The code indention format for this post is 4 spaces.
 
 ### One liner conditional 
 ```python

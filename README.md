@@ -31,7 +31,17 @@ def openingfile(patlist):
 for i in openingfile('list.file'):
     print(i)
 ```
+### Getting and update value for dictionary
+```python
+dict = {}
 
+# adding value
+dict['name'] = fitri
+
+# get value
+dict.get('name')
+    print(i)
+```
 
   
   

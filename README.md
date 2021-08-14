@@ -40,7 +40,6 @@ dict['name'] = fitri
 
 # get value
 dict.get('name')
-    print(i)
 ```
 
   

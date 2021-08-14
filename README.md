@@ -18,8 +18,8 @@ value_1 if condition else value_2
 output = subprocess.Popen(1stcommand, stdout=subprocess.PIPE, env=EBG_ENV)
 output = subprocess.run(2ndcommand, stdin=pat_info.stdout, stdout=subprocess.PIPE)
 
-# add parameter shell=True if wildcard not working
-# only Popen stdout process can be pass as stdin
+#add parameter shell=True if wildcard not working
+#only Popen stdout process can be pass as stdin
 ```
 
 ### Opening file with generator
@@ -29,7 +29,7 @@ def openingfile(patlist):
         for pattern in listfile.readlines():
             yield pattern
 
-# calling the function
+#calling the function
 for i in openingfile('list.file'):
     print(i)
 ```
@@ -38,10 +38,10 @@ for i in openingfile('list.file'):
 ```python
 dict = {}
 
-# adding value
+#adding value
 dict['name'] = fitri
 
-# get value
+#get value
 dict.get('name')
 ```
 
@@ -61,11 +61,20 @@ text.strip()
 #strip custom char, must be from either end (can be applied in both rstrip and lstrip)
 text.strip('o ')
 ```
-  
-  
-  
-  
-  
+### Passing file's arg to script
+```python
+import argparse
+
+#create parser object
+parser = argparse.ArgumentParser()
+
+#add argument based on positional
+parser.add_argument('filename')
+
+#parsing back the arg
+print(parser.parse_args().filename)
+```
+
   
   
   

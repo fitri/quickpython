@@ -5,6 +5,8 @@ The code indention format for this post is 4 spaces.
 
 There's no fixed format for the code, it might been working code or might just been a placeholder for example purposes.
 
+The code in this list should only do one thing, one.
+
 ### One liner conditional 
 ```python
 value_1 if condition else value_2

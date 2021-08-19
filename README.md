@@ -76,8 +76,21 @@ parser.add_argument('filename')
 #parsing back the arg
 print(parser.parse_args().filename)
 ```
+### Read and writing csv file
+```python
+import csv
 
-  
+#reading the csv file
+with open('file.csv','r') as csvfile:
+    readcsv = csv.reader(csvfile)
+    for row in readcsv:
+        print(row)
+        
+#writing csv file
+with open('file.csv','w') as csvfile:
+    writecsv = csv.writer(csvfile)
+    writecsv.writerow(['one', 'two'])
+```
   
   
   

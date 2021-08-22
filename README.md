@@ -91,8 +91,24 @@ with open('file.csv','w') as csvfile:
     writecsv = csv.writer(csvfile)
     writecsv.writerow(['one', 'two'])
 ```
-  
-  
+### Add value to dict
+```python
+sample = {
+    "data":"existing"
+}
+
+#using format dictionary[key] = value
+sample["latest"] = "new"
+```
+### Check if key exist in dictionary
+```python
+sample = {
+    "data":"existing"
+}
+#using if else and builtin method keys()
+if "data" in sample.keys():
+    return True
+```
   
   
   

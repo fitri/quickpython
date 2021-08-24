@@ -111,7 +111,7 @@ if "data" in sample.keys():
 ```
 ### Return default value from dictionary
 ```python
-database {
+database = {
     'user':'fitri',
     'id': '707'
 }

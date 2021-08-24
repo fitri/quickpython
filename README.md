@@ -109,7 +109,17 @@ sample = {
 if "data" in sample.keys():
     return True
 ```
-  
+### Return default value from dictionary
+```python
+database {
+    'user':'fitri',
+    'id': '707'
+}
+
+#return None (or can any value) if key found in database.
+database.get('fatin', None)
+
+```
   
   
   

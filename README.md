@@ -116,7 +116,7 @@ database = {
     'id': '707'
 }
 
-#return None (or any value) if key found in database.
+#return None (or any value) if key not found in database.
 database.get('fatin', None)
 
 ```

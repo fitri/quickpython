@@ -134,6 +134,50 @@ def generatorfunction():
 #generator need to be started first with __next__ before proceeding sending the datatypes.
 
 ```
+### Iterating generator inside of generator
+```python
+def generatorfirst(n):
+    for i in range(n):
+        yield i 
+        
+def generatorsecond(n):
+    yield 'Start here'
+    yield from generatorfirst()
+    yiend 'End here'
+    
+>>> hi = generatorssecond()
+>>> hi.__next__()
+>>> Start here
+>>> Hi.__next()
+>>> 0
+...x98
+>>> End here
+
+#using yield from, the generator can iterate over generator object just like loop
+#the key yield from need to be inside of function
+
+```
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   

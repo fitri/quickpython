@@ -157,7 +157,20 @@ def generatorsecond(n):
 #the key yield from need to be inside of function
 
 ```
-    
+### Pass output from unix command pipeline into python script
+```python
+#save this infot file.py
+import fileinput
+
+with fileinput.input() as f_input:
+    for line in f_input:
+        print(line, end='')
+
+>>> ls -l | python file.py
+
+#the pipeline will pass the to the script, process and get the output.
+```
+        
   
   
   

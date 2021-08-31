@@ -120,7 +120,20 @@ database = {
 database.get('fatin', None)
 
 ```
-  
+### Passing value to generator
+```python
+def generatorfunction():
+    x = yield x
+    print (x)
+    
+>>> hi = generatorfunction()
+>>> hi.__next__()
+>>> hi.send('Fitri')
+>>> Fitri
+
+#generator need to be started first with __next__ before proceeding sending the datatypes.
+
+```
   
   
   
